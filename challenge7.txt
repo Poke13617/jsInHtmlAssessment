@@ -1,0 +1,4 @@
+Explain the difference between calling a function from within 
+a script block and calling a function from a button's onclick 
+attribute. Write a short answer.
+
