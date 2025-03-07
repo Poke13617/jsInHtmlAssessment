@@ -10,21 +10,16 @@
     <p>Paragraph 2</p>
     <p>Paragraph 3</p>
 
-
-
-
-
-
-
-
-
-
-
-
+    
     <script>
-        var para = document.getElementsByTagName("p");
-        paragraph.setAttribute("style", "color:red");
-
+        function myFunc(){
+            var paraTags = document.getElementsByTagName("p")
+            //using a for loop to capture all 3 p tags
+            for(var i = 0; i < paraTags.length; i ++){
+                paraTags[i].style.color = "red"
+            }
+        }
+        myFunc()
     </script>
 </body>
 </html>

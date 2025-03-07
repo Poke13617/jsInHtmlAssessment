@@ -7,6 +7,27 @@
 
     <!-- Create a <div> element with a blue background and white 
         text using both setAttribute and dot notation. -->
-        
+        <script>
+            var body = document.getElementsByTagName("body");
+            function makeDivDotNot(){
+                var divs = document.createElement("div");
+                
+                divs.style.backgroundColor = "blue"
+                divs.style.color = "white"
+                divs.style.width = "200px"
+                divs.style.height = "200px"
+                //Divs.setAttribute("style","color: white");
+                body[0].appendChild(divs);
+                divs.innerHTML = "This is my div with white text and a blue background color made with dot notation";
+            }
+            function makeDivSetAtt(){
+                var divs2 = document.createElement("div");
+                divs2.setAttribute("style", "background-color: blue; color: white; width: 200px; height: 200px; margin: 20px 0px 0px 0px")
+                divs2.innerHTML = "This is the other div using just the setAttribute document model"
+                body[0].appendChild(divs2)
+            }
+            makeDivDotNot()
+            makeDivSetAtt()
+        </script>
 </body>
 </html>

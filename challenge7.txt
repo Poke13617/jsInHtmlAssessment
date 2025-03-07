@@ -2,3 +2,4 @@ Explain the difference between calling a function from within
 a script block and calling a function from a button's onclick 
 attribute. Write a short answer.
 
+A function in a script block is used for more addition/styling based such as adding/changing information based on a keyboard press or a mouse click while onclick is more element based. resulting in a changing of information depending on what was clicked (can add, remove, and change information). Script blocks are more where you create the function. onclick requires you to hit a specific piece of content on the page while the addEventListener in the script block is more focused towards general clicks or button presses almost anywhere on the page.
