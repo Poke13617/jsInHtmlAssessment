@@ -6,7 +6,10 @@
 <body>
     <!-- Create an HTML element with an id of "display" and use 
      JavaScript to change its text content to "Changed by JavaScript!". -->
-
-
+    <h2 id="display">This is the greatest line ever. Hope we won't get removed...</h2>
+    <script>
+        var display = document.getElementById("display");
+        display.innerHTML = "This HTML element was changed by Javascript!"
+    </script>
 </body>
 </html>

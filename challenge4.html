@@ -9,6 +9,11 @@
         add it to the existing webpage. The button text should 
         say "Click me!". -->
 
-    
+        <script>
+            var button = document.createElement("button");
+            var body = document.getElementsByTagName("body")
+            button.innerHTML = "click me!";
+            body[0].appendChild(button)
+        </script>
 </body>
 </html>
